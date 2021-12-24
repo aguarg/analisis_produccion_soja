@@ -173,6 +173,7 @@ tabla = [
 print()
 quo.echo(f"RESULTADOS DEL ANÁLISIS ESTADÍSTICO", fg="red", bold=True)
 quo.echo(quo.tabular(tabla))
+print("Archivo de texto con los resultados, generado con éxito!")
 
 
 # Imprimo la gráfica acá para que aparezca después de la tabla:
@@ -183,12 +184,23 @@ plt.show()
 
 #===============================================================================================================================
 # 5- VOLCANDO LOS DATOS A UN ARCHIVO DE TEXTO:
-f = open("datos.txt", "w")
-f.write("RESULTADO DEL ANÁLISIS ESTADÍSTICO:")
-f.write(str(pd.DataFrame(tabla)))
+f = open("resultados.txt", "w")
+
+f.write("RESULTADOS DEL ANÁLISIS ESTADÍSTICO: \n")
+mi_dataframe = pd.DataFrame(tabla)
+f.write(str(mi_dataframe))
+
+f.write("\n")
+f.write("\n")
+
+f.write("Datos en formato lista: \n")
+f.write("tabla = " + str(tabla))
+
 f.close()
 
 # me llena el txt de 1 y 0 en la parte de arriba. Ver como sacarlos y como centrar los datos.
+
+
 
 
 
