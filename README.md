@@ -1,4 +1,4 @@
-# analisis_produccion_soja
+# Análisis estadístico de la producción de soja en Argentina, período 1969 - 2020
 Análisis estadístico y representación gráfica de la producción argentina de soja, desde 1969 al 2020, a partir de los datos proporcionados en formato CSV por el Ministerio de Agricultura, Ganadería y Pesca de la república Argentina.
 
 El script devuelve valores máximos y mínimos, valores medios, desvío estándar, etc. 
